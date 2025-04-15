@@ -23,8 +23,8 @@ useEffect(() => {
 
 
 return !loading ?  (
-  <div className='min-h-screen flex flex-wrap items-center justify-center bg-gray-400'>
-    <div className='w-full block self-center'>
+  <div className='min-h-screen flex  items-center justify-center bg-gray-400'>
+    <div className=''>
       <Header />
       <main>
       TODO:  <Outlet />
