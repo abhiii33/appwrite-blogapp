@@ -60,7 +60,7 @@ import{useForm} from "react-hook-form"
       {...register("email",{
         required:true,
         validate:{
-            matchpatter:(value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+            matchpattern:(value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
                         "Email address must be a valid address"
       }})}
 

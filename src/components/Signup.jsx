@@ -15,6 +15,7 @@ const Signup = () => {
          try {
                const userData = await authService.createAccount(data)
                if(userData){
+                    const userData = await authService.getCurrentUser()
                        dispatch(login(userData))
                        navigate("/")
                }
@@ -41,7 +42,38 @@ const Signup = () => {
             </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-        <form onSubmit={handlesubmit(create)} ></form>
+        <form onSubmit={handlesubmit(create)} >
+            <Input
+             label="name"
+             type="text"
+             placeholder="enter full name"
+             {...register("name",{
+                required:true
+             })}
+            />
+
+            <Input
+             type="email"
+             label="email"
+              placeholder="enter your email"
+              {...register("email",{
+                required:true
+              })}
+             />
+             <Input
+             type="password"
+             label="password"
+             placeholder="passwrd"
+             {...register("password",{
+                require:true,
+                pattern:{
+                    value:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+                    message:"Password must be 8 characters and contain at least one letter and one number"
+                }
+             })} />
+
+             <Button type="submit"> Create Account </Button> 
+        </form>
         </div>
         </div>
   )
