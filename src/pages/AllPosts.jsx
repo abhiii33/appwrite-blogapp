@@ -2,7 +2,7 @@ import React from 'react'
 import dbservice from '../appwrite/config'
 import { useEffect, useState } from 'react'
 import{ Container ,Postcard} from '../components'
-const AllPost = () => {
+const AllPosts = () => {
     const[posts,setPosts]=useState([])
     const allpost = async()=>{
         await dbservice.getPosts([]).then(
@@ -20,4 +20,4 @@ const AllPost = () => {
   )
 }
 
-export default AllPost
+export default AllPosts

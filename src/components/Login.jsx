@@ -8,7 +8,7 @@ import{useForm} from "react-hook-form"
  const Login = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    const{register,handlesubmit} = useForm()
+    const{register,handleSubmit} = useForm()
     const [error,setError] = useState(null)
     const login = async(data)=>{
         try {
@@ -49,7 +49,7 @@ import{useForm} from "react-hook-form"
             <p className="text-red-500 text-center mt-2">{error}</p>
         )}  
         <form
-            onSubmit={handlesubmit(login)}
+            onSubmit={handleSubmit(login)}
             className="mt-8"
         >              
                 <div className=''>
