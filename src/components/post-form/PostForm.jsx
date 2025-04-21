@@ -1,4 +1,4 @@
-import React ,{use, useCallback} from 'react'
+import React ,{useEffect, useCallback} from 'react'
 import {useForm} from 'react-hook-form'
 import{Button,Input,Select,RTE} from "../index"
 import  dbservice  from '../../appwrite/config'
@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import {useSelector } from 'react-redux'
 function PostForm({post}) {
     const navigate = useNavigate()
-    const {userData} =useSelector((state)=>state.user.userData)
+    const userData =useSelector((state)=>state.auth.userData)
     const {register,setValue, watch,handleSubmit,control,getValues}= useForm({
         defaultValues:{
             title:post?.title ||" ",
@@ -95,7 +95,7 @@ return (
         {post && (
             <div className="w-full mb-4">
                 <img
-                    src={appwriteService.getFilePreview(post.featuredImage)}
+                    src={dbservice.getFilePreview(post.featuredImage)}
                     alt={post.title}
                     className="rounded-lg"
                 />

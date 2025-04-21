@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {useForm} from "react-hook-form"
-import authService, { Authservice } from '../appwrite/auth'
+import authService from '../appwrite/auth'
 import {    Link, useNavigate } from 'react-router-dom'
 import{ useDispatch } from 'react-redux'
 import  {login} from "../store/authSlice"
@@ -8,7 +8,7 @@ import{Button ,Input,Logo} from "./index"
 function Signup() {
     const[error,setError] = useState("")
     const navigate = useNavigate()
-    const [register,handleSubmit] = useForm()
+    const {register,handleSubmit} = useForm()
     const dispatch = useDispatch()
     const create = async(data)=>{
         setError("")

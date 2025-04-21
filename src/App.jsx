@@ -27,7 +27,7 @@ return !loading ?  (
     <div className=''>
       <Header />
       <main>
-      TODO:  <Outlet />
+      todo: <Outlet />
       </main>
       <Footer />
     </div>

@@ -18,7 +18,7 @@ import{useForm} from "react-hook-form"
                 const userData= await authService.getCurrentUser()
                 if(userData){
                     dispatch(Authlogin({userData}))
-                    navigate
+                    navigate("/")
                 }
             }
         } catch (error) {
@@ -76,10 +76,9 @@ import{useForm} from "react-hook-form"
             message:"Password must be 8 characters and contain at least one letter and one number"
         }
      })} />
-     <Button
-         type="button"
-         
-      />
+      <Button type="submit"
+          className="w-full"
+        >Sign in</Button>
                 </div>
          </form>
         </div>

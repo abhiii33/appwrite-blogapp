@@ -5,6 +5,9 @@ export class Authservice{
     client = new Client();
     account;
     constructor(){
+      console.log('Endpoint:', import.meta.env.VITE_APPWRITE_URL);
+console.log('Project ID:', import.meta.env.VITE_APPWRITE_PROJECT_ID);
+
         this.client
             .setEndpoint(conf.appwriteurl)
             .setProject(conf.appwriteProjectId);
@@ -13,14 +16,18 @@ export class Authservice{
         async createAccount ({email,password,name}){
             try {
                 const useraccount = await this.account.create(ID.unique(),email,password,name)
-             if(useraccount){}
+             if(useraccount){
+              return this.login({email,password})
+             }else{
+              return useraccount
+             }
             } catch (error) {
                 throw(error)
             }
         }
    async login({email,password}){
     try {
-        const session = await this.account.createEmailPasswordSession(email,password)
+        return await this.account.createEmailSession(email,password)
     } catch (error) {
         throw(error)
     }
@@ -28,12 +35,15 @@ export class Authservice{
 
   async getCurrentUser(){
   try {
-    return  await this.account.get()
+
+     const user=  await this.account.get();
+    console.log("User:", user);
   } 
   catch (error) {
-    console.log("Appwrite serive :: getCurrentUser :: error", error);
+    console.log( error);
  
   }
+  return null;
   }
 
     async logout(){

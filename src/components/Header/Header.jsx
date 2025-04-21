@@ -43,7 +43,7 @@ const Header = () => {
          </div>
           <div>
           <ul>
-            {navitems.map((item)=>{item.active?(
+            {navitems.map((item)=>{ return item.active?(
               <li key={item.name} >
                 <button onClick={()=>navigate(item.slug)}>
                 {item.name}</button>
