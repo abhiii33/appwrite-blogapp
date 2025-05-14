@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {useForm} from "react-hook-form"
-import authService from '../appwrite/auth'
+// import authService from '../appwrite/auth'
+import {createAccount,currentuser} from '../appwrite/auth'
 import {    Link, useNavigate } from 'react-router-dom'
 import{ useDispatch } from 'react-redux'
 import  {login} from "../store/authSlice"
@@ -13,12 +14,12 @@ function Signup() {
     const create = async(data)=>{
         setError("")
          try {
-               const userData = await authService.createAccount(data)
-               if(userData){
-                    const userData = await authService.getCurrentUser()
-                       dispatch(login(userData))
-                       navigate("/")
-               }
+               const userData = await createAccount(data)
+               if (userData) {
+                const userData = await currentuser()
+                if(userData) dispatch(login(userData));
+                navigate("/")
+            }
          } catch (error) {
              setError(error.message)
          }

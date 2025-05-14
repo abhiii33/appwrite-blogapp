@@ -8,7 +8,7 @@ const Header = () => {
   const navitems = [
     {
       name: "Home",
-      slug: "/",
+      slug: "/home",
       active: true,
     },
     {

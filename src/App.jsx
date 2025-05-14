@@ -1,20 +1,19 @@
 import React from 'react'
 import {useState,useEffect} from "react"
 import { useDispatch, useSelector } from 'react-redux'
-import authService from './appwrite/auth'
+import  { currentuser } from './appwrite/auth'
 import {login,logout } from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 const App = () => {
-  //  const{userData} = useSelector(store)
+  
 const[loading,setLoading] = useState(true)
 const dispatch =  useDispatch()
 useEffect(() => {
-      authService.getCurrentUser()
-     
-      .then((userData)=>{ 
+
+ currentuser().then((userData)=>{ 
         if(userData)
-        dispatch(login({userData}))
+        dispatch(login(userData))
       else
         dispatch(logout())
       })
@@ -22,7 +21,7 @@ useEffect(() => {
 }, [])
 
 
-return !loading ?  (
+return   (
   <div className='min-h-screen flex  items-center justify-center bg-gray-400'>
     <div className=''>
       <Header />
@@ -32,7 +31,7 @@ return !loading ?  (
       <Footer />
     </div>
   </div>
-) : null
+)
 
     }
 export default App
