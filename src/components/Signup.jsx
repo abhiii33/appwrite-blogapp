@@ -18,7 +18,7 @@ function Signup() {
                if (userData) {
                 const userData = await currentuser()
                 if(userData) dispatch(login(userData));
-                navigate("/")
+                navigate("/home")
             }
          } catch (error) {
              setError(error.message)

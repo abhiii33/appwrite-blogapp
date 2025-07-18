@@ -13,7 +13,7 @@ useEffect(() => {
 
  currentuser().then((userData)=>{ 
         if(userData)
-        dispatch(login(userData))
+        dispatch(login({userData}))
       else
         dispatch(logout())
       })
@@ -21,7 +21,7 @@ useEffect(() => {
 }, [])
 
 
-return   (
+return !loading?  (
   <div className='min-h-screen flex  items-center justify-center bg-gray-400'>
     <div className=''>
       <Header />
@@ -30,6 +30,10 @@ return   (
       </main>
       <Footer />
     </div>
+  </div>
+):(
+  <div className='flex items-center justify-center h-screen'>
+  <h1>Loading</h1>
   </div>
 )
 

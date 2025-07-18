@@ -1,9 +1,10 @@
-import conf from "../conf/conf"
+import config from "../conf/conf"
 import { Client, Account, ID } from "appwrite";
 
 const client = new Client()
-      .setEndpoint(conf.appwriteurl) 
-      .setProject(conf.appwriteProjectId)
+      .setEndpoint(config.appwriteurl) 
+      .setProject(config.appwriteProjectId)
+    //   .setCookieFallback(true);
       console.log('Endpoint:', import.meta.env.VITE_APPWRITE_URL);
       console.log('Project ID:', import.meta.env.VITE_APPWRITE_PROJECT_ID);
 const account = new Account(client)
@@ -16,6 +17,8 @@ const createAccount = async (email, password,name) => {
      if(response) {
         console.log("Account created successfully", response);
          return login(email, password)
+     }else{
+        return response
      }
     } catch (error) {
         console.error(error);
@@ -39,17 +42,22 @@ const login = async (email, password) => {
         return response;        
     }          catch (error) {
         throw error;
-        console.error(error);
+      
     }
 }
 
 const currentuser = async()=>{
     try {
-        const user= await account.get()
-        console.log(user,"CURRENTUSER");
-        return user
-    } catch (error) {
+        // const session= await login(email, password)
+    //   const user = await account.getSession('current');
+  
+            const user = await account.get();
+        console.log("Current user:", user);
+        return user;
+    
+}catch (error) {
         console.error(error);
+        return null;
     }
 }
  export  {createAccount,login,currentuser,logout}

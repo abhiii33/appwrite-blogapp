@@ -8,8 +8,14 @@ export default function Button({
     className = "",
     ...props
 
-})  {
+}) 
+ 
+{
+  const log = (e)=>{
+    console.log(e)
+ window.alert("Button clicked")
+} 
   return (
-<button className={`px-4 py-2 rounded-lg ${bgColor} ${textColor} ${className}`}{...props}>{children}</button>
+<button onClick={log} className={`px-4 py-2 rounded-lg ${bgColor} ${textColor} ${className}`}{...props}>{children}</button>
   )
 }
