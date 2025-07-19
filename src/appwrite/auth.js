@@ -49,7 +49,8 @@ const currentuser = async()=>{
         console.log(user,"CURRENTUSER");
         return user
     } catch (error) {
-        console.error(error);
+        console.log("no current session found", error);
+        return null;
     }
 }
  export  {createAccount,login,currentuser,logout}

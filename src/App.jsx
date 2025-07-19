@@ -12,14 +12,22 @@ const dispatch =  useDispatch()
 useEffect(() => {
 
  currentuser().then((userData)=>{ 
-        if(userData)
-        dispatch(login(userData))
-      else
-        dispatch(logout())
+        if(userData) {
+            dispatch(login({userData}))
+        } else {
+            dispatch(logout())
+        }
       })
     .finally(() => setLoading(false))
 }, [])
 
+if (loading) {
+    return (
+        <div className='min-h-screen flex items-center justify-center bg-gray-400'>
+            <div className='text-xl'>Loading...</div>
+        </div>
+    )
+}
 
 return   (
   <div className='min-h-screen flex  items-center justify-center bg-gray-400'>
