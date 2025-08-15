@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rewiring Human Minds for the AI Era" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroNudge</title>
+    <link rel="icon" href="./assets/unnamed.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- New mobile-first responsive CSS -->
+    <link rel="stylesheet" href="css/responsive-optimized.css" />
+  </head>
+  <body>
+    <!--AUDIO AND CURSOR-->   
+    <audio id="bg-music" src="./assets/Sounds/bg-music.mp3" loop allow="autoplay"></audio>
+    <audio id="click-sound" src="./assets/Sounds/click.wav"></audio>
+    <audio id="happysound" src="./assets/Sounds/Click-happy-sound.mp3"></audio>
+    <audio id="soundone" src="./assets/Sounds/soundone.mp3"></audio>
+    <audio id="soundTwo" src="./assets/Sounds/soundtwo.mp3"></audio>
+    <!--AUDIO AND CURSOR END-->
+
+    <!--sidebar-menu-->
+    <div id="appmenu" role="button" tabindex="0">
+      <div id="mainMenu" class="main-menu">
+        <div class="menu-background-wrapper">
+          <div class="menu-background"></div>
+        </div>
+        <div class="menu-quick-options">
+          <div class="socialicons-wrapper">
+            <div class="social-icon">
+              <a href="https://www.instagram.com/ballisticlearningsystems/" target="_blank" rel="noopener noreferrer">
+                <img loading="lazy" src="assets/social/instagram.svg" alt="Instagram">
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/ballisticlearning/" target="_blank" rel="noopener noreferrer">
+                <img loading="lazy" src="assets/social/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://twitter.com/ballisticlearn1" target="_blank" rel="noopener noreferrer">
+                <img loading="lazy" src="assets/social/twitter.svg" alt="Twitter">
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="mailto:enquiry@ballisticlearning.com">
+                <img loading="lazy" src="assets/social/email.svg" alt="Mail">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-full-options">
+           <a href="https://ballisticlearningsystems.com/" class="menu-full-option" style="transition-delay: 400ms">
+            <div>
+              <img loading="lazy" src="assets/academy logo.svg" alt="Ballistic Learning">
+              <h3 class="label">Ballistic Learning</h3>
+            </div>
+          </a>
+          <a href="#here" class="menu-full-option" style="transition-delay: 400ms">
+            <div>
+              <img loading="lazy" src="assets/watch.svg" alt="Watch">
+              <h3 class="label">See to Unsee</h3>
+            </div>
+          </a>
+          <a href="#section2" class="menu-full-option" style="transition-delay: 250ms">
+            <div>
+              <img loading="lazy" src="assets/think again.svg" alt="Think">
+              <h3 class="label">Mind Uncoded</h3>
+            </div>
+          </a>
+          <a href="#section1" class="menu-full-option" style="transition-delay: 200ms">
+            <div>
+              <img loading="lazy" src="assets/start.svg" alt="Start">
+              <h3 class="label">Trace the Truth</h3>
+            </div>
+          </a>
+          <a href="https://www.theballisticacademy.com/local/autoguestredirect/redirect.php?id=9" class="menu-full-option" style="transition-delay: 350ms;">
+            <div>
+              <img loading="lazy" src="assets/bl-acad.svg" alt="Ballistic Academy">
+              <h3 class="label">भारत Eyes on AI</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button id="mainMenu-toggle" class="mainMenu-toggle happysound" type="button" tabindex="2" aria-label="Toggle main menu">
+        <div class="nav-but-wrap">
+          <div class="menu-icon hover-target">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <!--sidebar-menu-end-->
+
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg fixed-top cus-nav w-100 z-2">
+      <div class="container-fluid width100">
+        <a class="navbar-brand site-logo" href="#section1" tabindex="1">
+          <img loading="lazy" src="assets/ballistic Logo Animate Blue_W.gif" class="tagline" alt="NeuroNudge logo">
+        </a>
+      </div>
+    </nav>
+    <!--nav-end-->
+
+    <!--Start of video section-->
+    <section class="container-fluid section4" id="here">
+      <div class="container-responsive">
+        <div class="video-area">
+          <div class="text-center video-info">
+            <h1>
+              ध्यान से देखो
+              <img loading="lazy" src="assets/eye.gif" alt="eye animation">
+              भारत EYES ON AI
+            </h1>
+          </div>
+          <div class="row align-items-stretch video-row">
+            <!-- Main Video Card -->
+            <div class="col-lg-7 col-md-6">
+              <div class="video-preview-card h-100">
+                <video id="main-video" src="assets/1.mp4" class="w-100 h-100" loop autoplay preload="metadata" muted controls aria-label="Main video content">
+                </video>
+              </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="col-lg-5 col-md-6 summary-col g-0 h-100 position-relative">
+              <div class="video-glass-box h-100">
+                <h5>SUMMARY</h5>
+                <div id="summary-text" class="pt-3"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-3">
+            <div class="owl-slider">
+              <div class="owl-carousel owl-theme owl-loaded owl-drag" id="carousel">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item video-item active" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/1.mp4" data-summary-id="summary-1">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-and-critical-thinking.jpg" alt="Video 1">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/pause.png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="owl-item video-item active" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/2.mp4" data-summary-id="summary-2">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-education-not-infulencers.png" alt="Video 2">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/play 1 (1).png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="owl-item video-item active" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/3.mp4" data-summary-id="summary-3">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-effects-mentalpathways.png" alt="Video 3">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/play 1 (1).png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="owl-item video-item active" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/4.mp4" data-summary-id="summary-4">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-mirrors-thought-clarity.png" alt="Video 4">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/play 1 (1).png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="owl-item video-item" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/5.mp4" data-summary-id="summary-5">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-shiksha-aur-soch.png" alt="Video 5">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/play 1 (1).png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="owl-item video-item" style="width: 289.625px; margin-right: 10px;">
+                      <div class="item">
+                        <a href="#" data-video="assets/6.mp4" data-summary-id="summary-6">
+                          <img loading="lazy" class="thumbnail" src="assets/thumbnail/ai-educatioin-mind.png" alt="Video 6">
+                          <img loading="lazy" class="fa-play play-icon" src="assets/play 1 (1).png" alt="Play button">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <button type="button" role="presentation" class="owl-prev" aria-label="Previous videos"></button>
+                  <button type="button" role="presentation" class="owl-next disabled" aria-label="Next videos"></button>
+                </div>
+                <div class="owl-dots video-dots disabled"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden video summaries -->
+          <div class="d-none">
+            <div id="summary-1" class="video-summary">
+              <ul>
+                <li class="mb-2">AI आपकी जगह नहीं ले रहा — वो सिर्फ़ आपका आईना है।</li>
+                <li class="mb-2">प्रॉम्प्ट देना सोचने जैसा नहीं होता।</li>
+                <li class="mb-2">तेज़ी का मतलब समझदारी नहीं है।</li>
+                <li class="mb-2">दिमाग बेकार नहीं, बस थका हुआ है।</li>
+                <li class="mb-2">यह कोर्स आपकी सोच को फिर से जगाने के लिए है — अब रुकिए, सोचिए।</li>
+              </ul>
+            </div>
+            <div id="summary-2" class="video-summary">
+              <ul>
+                <li class="mb-2">AI आपके इरादे को नहीं समझता, सिर्फ़ सवाल की शक्ल दोहराता है|</li>
+                <li class="mb-2">आपका इनपुट जितना गहरा, जवाब भी वैसा है|</li>
+                <li class="mb-2">AI असल में आपकी सोच का रिफ्लेक्शन है|</li>
+                <li class="mb-2">असली बातचीत AI से नहीं, खुद से हो रही होती है|</li>
+              </ul>
+            </div>
+            <div id="summary-3" class="video-summary">
+              <ul>
+                <li class="mb-2">दिमाग बार-बार की गई चीज़ों को और मजबूत करता है|</li>
+                <li class="mb-2">AI से मिलते तेज़ जवाब हमें शॉर्टकट की आदत डालते है|</li>
+                <li class="mb-2">धीरे-धीरे गहराई कम, तेजी ज़्यादा पसंद आने लगती है|</li>
+                <li class="mb-2">सवाल ये नहीं कि AI क्या कर रहा है|</li>
+                <li class="mb-2">असली सवाल है: ये हमारे साथ क्या कर रहा है|</li>
+              </ul>
+            </div>
+            <div id="summary-4" class="video-summary">
+              <ul>
+                <li class="mb-2">हर AI ट्रिक ज़रूरी नहीं सोच की सफ़ाई ज़रूरी है|</li>
+                <li class="mb-2">AI बस आपकी सोच को लौटाता है|</li>
+                <li class="mb-2">हर प्रॉम्प्ट सोच का आईना है साफ़ या उलझ है|</li>
+                <li class="mb-2">ट्रिक्स नहीं, आदतें बदलनी होंग</li>
+                <li class="mb-2">ध्यान बिखरा, तो समझ भी बिखरेगी</li>
+              </ul>
+            </div>
+            <div id="summary-5" class="video-summary">
+              <ul>
+                <li class="mb-2">बात AI की हो रही है, पर असली बदलाव ध्यान में हो रहा है|</li>
+                <li class="mb-2">AI समझ नहीं बढ़ा रहा, जो ध्यान में है उसी को बढ़ा रहा है|</li>
+                <li class="mb-2">ध्यान उलझा हो, तो AI भी वही उलझन लौटाएग|</li>
+                <li class="mb-2">ये Artificial Intelligence का नहीं, Amplified Attention का दौर है|</li>
+                <li class="mb-2">ध्यान को संभालो नहीं तो खो दोगे|</li>
+              </ul>
+            </div>
+            <div id="summary-6" class="video-summary">
+              <ul>
+                <li class="mb-2">बात AI की हो रही है, पर असली बदलाव ध्यान में हो रहा है</li>
+                <li class="mb-2">AI समझ नहीं बढ़ा रहा, जो ध्यान में है उसी को बढ़ा रहा है</li>
+                <li class="mb-2">ध्यान उलझा हो, तो AI भी वही उलझन लौटाएग</li>
+                <li class="mb-2">ये Artificial Intelligence का नहीं, Amplified Attention का दौर है</li>
+                <li class="mb-2">ध्यान को संभालो नहीं तो खो दोगे</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="bottom soundplay"> 
+            <i class="bi bi-arrow-down"></i>
+            <span>
+              <a class="um-cta pulse">आप अदभुद हो. Rewiring complete</a>
+            </span>
+            <i class="bi bi-arrow-down"></i>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <!-- End of Video Section -->
+
+    <!--Start of cards section-->
+    <section class="page-break container-fluid" id="section2">
+      <div class="container-responsive">
+        <div class="row pt-3 mb-4">
+          <div class="info text-center col-12">
+            <h1>भारत का MIND, BEYOND THE PROMPT</h1>
+            <p>India is young. The brain is tender. डर से नहीं, समझ से जोड़ो</p>
+          </div>
+        </div>
+        <div class="second" id="second">
+          <div class="cards-container row">
+            <div class="col-6 col-lg-3 col-md-6">
+              <div class="cards" data-color="#00ffe1">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="card-glow"></div>
+                    <div class="highlight"></div>
+                    <div class="edge-glow"></div>
+                    <div class="ripple-effect"></div>
+                    <div class="magnetic-particles"></div>
+                    <div class="card-content">
+                      <i class="fas fa-globe icon"></i>
+                      <h2>Learn 100 tools, master none</h2>
+                      <button type="button" class="btn flip-btn">False</button>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <div class="secret-content">
+                      <h2 class="secret-title">Chasing tools ≠ building mastery</h2>
+                      <p class="secret-description">Tool-based thinking is dopamine-driven and can bypass depth altogether. Neuroscience shows cognitive load increases with unstructured multitool environments</p>
+                      <button type="button" class="btn flip-btn">Truth</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-md-6">
+              <div class="cards" data-color="#f98012">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="card-glow"></div>
+                    <div class="highlight"></div>
+                    <div class="edge-glow"></div>
+                    <div class="ripple-effect"></div>
+                    <div class="magnetic-particles"></div>
+                    <div class="card-content">
+                      <i class="fas fa-fire icon"></i>
+                      <h2>Your value is in your output speed</h2>
+                      <button type="button" class="btn flip-btn lie-btn">
+                        Lies 
+                        <img src="assets/emoji.png" class="card-emoji" alt="emoji">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <div class="secret-content">
+                      <h2 class="secret-title">India's edge is cognitive diversity — not cost</h2>
+                      <p class="secret-description">India thinks across languages, spiritual systems, and emotional nuance. We do not need to compete in prompt English — we can design voice-first, local-language AI</p>
+                      <button type="button" class="btn flip-btn">Truth</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-md-6">
+              <div class="cards" data-color="#ff00dd">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="card-glow"></div>
+                    <div class="highlight"></div>
+                    <div class="edge-glow"></div>
+                    <div class="ripple-effect"></div>
+                    <div class="magnetic-particles"></div>
+                    <div class="card-content">
+                      <i class="fas fa-magic icon"></i>
+                      <h2>If you can write, you don't need to code</h2>
+                      <button type="button" class="btn flip-btn">झूठ</button>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <div class="secret-content">
+                      <h2 class="secret-title">Prompting ≠ Problem Solving</h2>
+                      <p class="secret-description">Language activates a different part of the brain than logic. Coding teaches systems thinking and delay of gratification — essential for governance, ethics, and architecture of any kind</p>
+                      <button type="button" class="btn flip-btn">Truth</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 col-md-6">
+              <div class="cards" data-color="#39FF14">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="card-glow"></div>
+                    <div class="highlight"></div>
+                    <div class="edge-glow"></div>
+                    <div class="ripple-effect"></div>
+                    <div class="magnetic-particles"></div>
+                    <div class="card-content">
+                      <i class="fas fa-fire icon"></i>
+                      <h2>Cut costs by cutting people</h2>
+                      <button type="button" class="btn flip-btn">NOT TRUE</button>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <div class="secret-content">
+                      <h2 class="secret-title">Replace burnout systems not humans</h2>
+                      <p class="secret-description">Mass layoffs linked to tech shifts increase trauma, lower innovation, and create organizational grief. Fear does not produce brilliance</p>
+                      <button type="button" class="btn flip-btn">Truth</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile card carousel -->
+          <div class="card-mobile">
+            <div class="owl-carousel card-carousel owl-theme">
+              <div class="item card-item">
+                <div class="cards" data-color="#00ffe1">
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <div class="card-glow"></div>
+                      <div class="highlight"></div>
+                      <div class="edge-glow"></div>
+                      <div class="ripple-effect"></div>
+                      <div class="magnetic-particles"></div>
+                      <div class="card-content">
+                        <i class="fas fa-globe icon"></i>
+                        <h2>Learn 100 tools, master none</h2>
+                        <button type="button" class="btn flip-btn">False</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="secret-content">
+                        <h2 class="secret-title">Chasing tools ≠ building mastery</h2>
+                        <p class="secret-description">Tool-based thinking is dopamine-driven and can bypass depth altogether. Neuroscience shows cognitive load increases with unstructured multitool environments</p>
+                        <button type="button" class="btn flip-btn">Truth</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat other cards for mobile carousel -->
+              <div class="item card-item">
+                <div class="cards" data-color="#f98012">
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <div class="card-glow"></div>
+                      <div class="highlight"></div>
+                      <div class="edge-glow"></div>
+                      <div class="ripple-effect"></div>
+                      <div class="magnetic-particles"></div>
+                      <div class="card-content">
+                        <i class="fas fa-fire icon"></i>
+                        <h2>Your value is in your output speed</h2>
+                        <button type="button" class="btn flip-btn lie-btn">
+                          Lies 
+                          <img src="assets/emoji.png" class="card-emoji" alt="emoji">
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="secret-content">
+                        <h2 class="secret-title">India's edge is cognitive diversity — not cost</h2>
+                        <p class="secret-description">India thinks across languages, spiritual systems, and emotional nuance. We do not need to compete in prompt English — we can design voice-first, local-language AI</p>
+                        <button type="button" class="btn flip-btn">Truth</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item card-item">
+                <div class="cards" data-color="#ff00dd">
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <div class="card-glow"></div>
+                      <div class="highlight"></div>
+                      <div class="edge-glow"></div>
+                      <div class="ripple-effect"></div>
+                      <div class="magnetic-particles"></div>
+                      <div class="card-content">
+                        <i class="fas fa-magic icon"></i>
+                        <h2>If you can write, you don't need to code</h2>
+                        <button type="button" class="btn flip-btn">झूठ</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="secret-content">
+                        <h2 class="secret-title">Prompting ≠ Problem Solving</h2>
+                        <p class="secret-description">Language activates a different part of the brain than logic. Coding teaches systems thinking and delay of gratification — essential for governance, ethics, and architecture of any kind</p>
+                        <button type="button" class="btn flip-btn">Truth</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item card-item">
+                <div class="cards" data-color="#39FF14">
+                  <div class="card-inner">
+                    <div class="card-front">
+                      <div class="card-glow"></div>
+                      <div class="highlight"></div>
+                      <div class="edge-glow"></div>
+                      <div class="ripple-effect"></div>
+                      <div class="magnetic-particles"></div>
+                      <div class="card-content">
+                        <i class="fas fa-fire icon"></i>
+                        <h2>Cut costs by cutting people</h2>
+                        <button type="button" class="btn flip-btn">NOT TRUE</button>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <div class="secret-content">
+                        <h2 class="secret-title">Replace burnout systems not humans</h2>
+                        <p class="secret-description">Mass layoffs linked to tech shifts increase trauma, lower innovation, and create organizational grief. Fear does not produce brilliance</p>
+                        <button type="button" class="btn flip-btn">Truth</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="cardfooter soundplay" role="button" tabindex="0">
+          <a href="#" class="position-relative">
+            <div>
+              <img src="assets/TAKE CONTROL.png" class="cta2" alt="Take Control">
+            </div>
+            <i class="bi bi-arrow-up" aria-hidden="true"></i>
+          </a>
+        </footer>
+      </div>
+    </section>
+    <!--End of cards section-->
+
+    <!--Start of hero section-->
+    <section class="section container-fluid section1" id="section1">
+      <div class="container-responsive">
+        <div class="content-wrap">
+          <h1 class="headerText">
+            भारत THINKS IN 22+ LANGUAGES
+            <h3 class="hero-subhead">English-only prompting is a trap</h3>
+          </h1>
+          <span class="hero-info mb-4">This Is Not Anti-AI. This Is Pro Human</span>
+
+          <div class="loader-wrapper">
+            <!-- Loader -->
+            <div class="loader">
+              <!-- Particles -->
+              <div id="particles-js"></div>
+              <!-- Loader face -->
+              <div class="loader--face">
+                <!-- Loader face smile -->
+                <svg class="loader--face--smile" viewBox="25 25 50 50">
+                  <circle cx="50" cy="50" r="20" fill="none" stroke="#64FFFE" stroke-width="2" />
+                </svg>
+                <!-- Loader face eyes -->
+                <div class="loader--face--eyes">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <span class="trace-the-truth mt-5 mb-5">
+            <a class="um-cta pulse" href="https://www.theballisticacademy.com/local/autoguestredirect/redirect.php?id=9" role="button">Trace The Truth</a>
+          </span>
+        </div>
+
+        <footer class="foot foot1 soundplay" role="button" tabindex="0">
+          <i class="bi bi-arrow-up scrollup" aria-hidden="true"></i>
+          <p>SCROLL UP DON'T SPIRAL DOWN</p>
+          <i class="bi bi-arrow-up scrollup" aria-hidden="true"></i>
+        </footer>
+        
+        <div class="Copyright">
+          <p>Copyright © 2025 Ballistic Learning Systems. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <!--End of hero section-->
+
+    <!-- Video play button -->
+    <a id="play-video" class="video-play-button" aria-label="Toggle background music">
+      <img src="./assets/music_off.svg" alt="Music toggle" class="bg-play">
+    </a>
+
+    <!-- Background stars -->
+    <div class="cosmos-background">
+      <div class="stars-container"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrambleTextPlugin.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <!-- Mobile-first responsive optimizations -->
+    <script src="js/mobile-optimizations.js" defer></script>
+  </body>
+</html>
